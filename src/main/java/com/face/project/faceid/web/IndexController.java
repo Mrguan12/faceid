@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @create: 2018-11-28 17:51
  **/
 @Controller
+@RequestMapping(value = "")
 public class IndexController {
     @RequestMapping(value = "/")
     public String Home(){
-        return "index";
+        return "login";
     }
 }
